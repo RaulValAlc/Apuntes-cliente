@@ -1,0 +1,108 @@
+/* Para la depuración y perrfeccionamiento
+ de este documento se ha empleado IA */
+body {
+    background-color: #2c3e50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  div {
+    background-color: #1a252f;
+    width: 280px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+  }
+
+  #ventanaResultado {
+    font-size: 24px;
+    font-family: monospace;
+    margin: 0;
+    color: #2ecc71; 
+  }
+
+  form {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+
+  input[type="button"] {
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  p {
+    text-align: left;
+  }
+
+  input[type="button"]:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  input[name="operacion"] {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+
+  input[name="operacion"]:hover {
+    background-color: #bdc3c7;
+  }
+
+  input[name="simbolo"] {
+    background-color: #f39c12;
+    color: white;
+  }
+
+  input[name="simbolo"]:hover {
+    background-color: #e67e22;
+  }
+
+  #btnResultado {
+    background-color: #27ae60;
+    color: white;
+  }
+
+  #btnResultado:hover {
+    background-color: #2ecc71;
+  }
+
+  #btnBorrar {
+    background-color: #e74c3c;
+    color: white;
+    width: 130px; 
+  }
+
+  #btnBorrar:hover {
+    background-color: #c0392b;
+  }
