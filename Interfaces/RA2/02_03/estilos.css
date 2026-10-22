@@ -1,0 +1,44 @@
+/* EJERCICIO 1 */
+p {
+    color: blue;
+}
+
+.texto {
+    color: green;
+}
+
+#parrafo1 {
+    color: red;
+}
+
+/* EJERCICIO 2  */
+#contenedor-ej2 {
+    color: purple;
+    font-family: Arial, sans-serif;
+    border: 3px solid black;
+}
+
+/*  EJERCICIO 3  */
+h1 {
+    color: blue;
+}
+
+.titulo {
+    color: orange;
+}
+
+h1.titulo {
+    color: green !important; 
+    /* Si eliminamos "!important" seguirá siendo verde por especificidad */
+}
+
+/* EJERCICIO 4 */
+#contenedor-ej4 {
+    color: darkgray; 
+    /* Si se cambia el color a rojo o azul, el span de abajo lo copiará exactamente */
+}
+
+#span-heredado {
+    color: inherit;
+    font-weight: bold;
+}

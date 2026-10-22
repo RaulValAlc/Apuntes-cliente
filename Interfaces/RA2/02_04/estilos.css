@@ -1,0 +1,65 @@
+/* Ejercicio 1 */
+section > ul > li:first-child {
+  color: #ff5722; /* Color diferente para el primero */
+}
+
+section > ul > li:nth-child(odd) {
+  font-style: italic; /* Cursiva para los impares */
+}
+
+/* Ejercicio 2 */
+h2::before,
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 3px;
+  background-color: #333;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+/* Ejercicio 3 */
+nav ul a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Ejercicio 4 */
+.bloque-absoluto {
+  width: 400px;
+  font-size: 16px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+
+.bloque-relativo {
+  width: 50%; /* Se adapta al 50% de la pantalla */
+  font-size: 1.5rem; /* Se adapta a la fuente base */
+  background-color: lightgreen;
+}
+
+/*  Ejercicio 5 */
+input[type="email"], 
+input[type="password"] {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* Ejercicio 6 */
+.producto {
+  position: relative;
+  display: inline-block;
+}
+
+.producto.nuevo::after {
+  content: "Novedad";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}

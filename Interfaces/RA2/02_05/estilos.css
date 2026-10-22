@@ -1,0 +1,150 @@
+/* Estilos generales para separar visualmente los ejercicios */
+body {
+    font-family: sans-serif;
+    margin: 0; /* Reseteamos el margen del body para el Ejercicio 7 */
+    padding-bottom: 500px; /* Espacio extra para poder hacer scroll y probar el Ejercicio 4 */
+}
+.ejercicio {
+    border: 2px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* --- Ejercicio 1: Estático --- */
+.ej1-contenedor {
+    background-color: lightblue;
+    width: 80%;
+    /* position: static; es el valor por defecto, no es obligatorio escribirlo */
+}
+.ej1-caja {
+    background-color: orange;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block; /* Para que respeten el margen y padding visualmente */
+}
+.ej1-parrafo {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: yellow;
+}
+
+/* --- Ejercicio 2: Relativo --- */
+.ej2-contenedor {
+    background-color: lightgreen;
+    width: 300px;
+    height: 200px;
+}
+.ej2-secundario {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+/* --- Ejercicio 3: Absoluto --- */
+.ej3-contenedor {
+    background-color: lightcoral;
+    width: 300px;
+    height: 200px;
+    position: relative; /* Clave: Ancla para el hijo absoluto */
+}
+.ej3-absoluto {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* --- Ejercicio 4: Fijo --- */
+.ej4-seccion {
+    background-color: #f0f0f0;
+}
+.ej4-fijo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    z-index: 1000; /* Asegura que quede por encima de otros elementos */
+}
+
+/* --- Ejercicio 5: Flotante --- */
+.ej5-contenedor {
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+.ej5-columna {
+    width: 45%;
+    float: left;
+    background-color: gold;
+    margin: 2%;
+    padding: 10px;
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho del 45% */
+}
+.ej5-limpiar {
+    clear: both;
+}
+
+/* --- Ejercicio 6: Visualización (Overflow) --- */
+.ej6-contenedor {
+    background-color: lightgray;
+    width: 300px;
+    height: 150px; /* Tamaño fijo requerido */
+    overflow: auto; /* Muestra barras de desplazamiento si el contenido se sale */
+    border: 1px solid black;
+}
+
+/* --- Ejercicio 7: Combinación --- */
+.ej7-contenedor {
+    background-color: #e6e6fa; /* Lavanda */
+    width: 80%;
+    height: 400px; /* Dimensiones fijas solicitadas */
+    margin: 0 auto;
+    position: relative; /* Ancla necesaria para el footer absoluto */
+    border: 3px solid purple;
+}
+.ej7-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100;
+}
+.ej7-nav {
+    float: left;
+    width: 25%;
+    height: 300px;
+    background-color: #b0c4de;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.ej7-central {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 70%;
+    float: left; /* Flotamos también el centro para que se ponga al lado del nav */
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.ej7-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

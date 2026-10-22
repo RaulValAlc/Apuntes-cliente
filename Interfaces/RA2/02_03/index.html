@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 02_03 - Diseño de Interfaces Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!--  EJERCICIO 1  -->
+    <section>
+        <h2>Ejercicio 1</h2>
+        <p class="texto" id="parrafo1">Este es el párrafo del Ejercicio 1.</p>
+        
+        <!-- RESPUESTA EJERCICIO 1:
+        El texto se muestra de color ROJO. 
+        Esto se debe a la regla de especificidad (prioridad) en CSS. 
+        Aunque las tres reglas apuntan al mismo elemento, el navegador 
+        calcula un peso para cada selector:
+        1. Selector de ID (#parrafo1) = Especificidad más alta.
+        2. Selector de Clase (.texto) = Especificidad media.
+        3. Selector de Etiqueta (p) = Especificidad más baja.
+        Por lo tanto, prevalece el color rojo del ID.
+        -->
+    </section>
+
+    <!--  EJERCICIO 2  -->
+    <section>
+        <h2>Ejercicio 2</h2>
+        <div id="contenedor-ej2">
+            <h1>Título del contenedor</h1>
+            <p>Este es un párrafo con un <span>elemento span</span> en su interior.</p>
+        </div>
+
+        <!-- RESPUESTA EJERCICIO 2:
+        Propiedades heredadas: 'color' y 'font-family' se han aplicado automáticamente al <h1>, al <p> y al <span>.
+        Propiedades NO heredadas: 'border' solo se aplica al <div> principal, no a sus hijos.
+        Justificación: CSS está diseñado para heredar automáticamente propiedades tipográficas (color, fuentes, interlineado) para mantener una coherencia visual sin tener que repetir código. Por el contrario, las propiedades del modelo de caja (border, margin, padding, width) no se heredan, ya que si lo hicieran, cada elemento hijo generaría su propio borde anidado, rompiendo la estructura de la interfaz.
+        -->
+    </section>
+
+    <!--  EJERCICIO 3  -->
+    <section>
+        <h2>Ejercicio 3</h2>
+        <h1 class="titulo">Título del Ejercicio 3</h1>
+
+        <!-- RESPUESTA EJERCICIO 3:
+        Con !important: El texto se muestra de color VERDE. La directiva !important anula cualquier regla de especificidad normal y obliga al navegador a aplicar esa declaración por encima de todas las demás.
+        
+        Sin !important: El texto SEGUIRÁ SIENDO VERDE. Esto se debe a que el selector compuesto "h1.titulo" (etiqueta + clase) tiene mayor especificidad que ".titulo" y que "h1" 
+        -->
+    </section>
+
+    <!--  EJERCICIO 4  -->
+    <section>
+        <h2>Ejercicio 4</h2>
+        <div id="contenedor-ej4">
+            <p>Párrafo de prueba con un <span id="span-heredado">texto destacado usando inherit</span> dentro.</p>
+        </div>
+
+        <!-- RESPUESTA EJERCICIO 4:
+        Al modificar el color del <div> padre, el <span> cambia de color automáticamente acompañándolo
+        El valor "inherit" obliga explícitamente a un elemento a tomar el valor calculado de su elemento padre directo para esa propiedad. 
+        ¿Cuándo es útil? Es especialmente útil para forzar la herencia en elementos que tienen estilos predeterminados muy fuertes por parte del navegador (como los enlaces <a>, que por defecto siempre son azules, o los elementos de formulario como los <button> o <input>), permitiendo que se integren visualmente con el texto que los rodea sin tener que reescribir la regla de color exacta
+        -->
+    </section>
+
+</body>
+</html>

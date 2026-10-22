@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Estilos en línea</title>
+</head>
+<body>
+    <h2 style="font-family: sans-serif; color: #333;">Prueba de Botones</h2>
+
+    <!-- Botón 1: Estilo sólido clásico -->
+    <button style="background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-family: Arial, sans-serif; cursor: pointer;">
+        Botón Primario
+    </button>
+
+    <!-- Botón 2: Estilo con bordes gruesos -->
+    <button style="background-color: transparent; color: #e74c3c; border: 3px solid #e74c3c; padding: 12px 25px; font-weight: bold; font-family: 'Courier New', Courier, monospace; cursor: pointer;">
+        Botón Secundario
+    </button>
+
+    <!-- Botón 3: Estilo redondeado y oscuro -->
+    <button style="background-color: #2c3e50; color: #f1c40f; border: 1px dashed #f1c40f; padding: 15px 30px; border-radius: 30px; font-size: 16px; cursor: pointer;">
+        Botón Especial
+    </button>
+
+    <!-- 
+    RESPUESTAS A LAS CUESTIONES:
+
+    a) ¿Por qué no se recomienda, generalmente, usar estilos en línea?
+       - Rompe el principio de separación de intereses (separar la estructura/HTML de la presentación/CSS)
+       - Dificulta enormemente el mantenimiento: si quieres cambiar el estilo de 50 botones, tendrías que modificar 50 líneas de código una por una
+       - Aumenta el peso del archivo HTML y no permite aprovechar la caché del navegador para los estilos (como sí hacen los archivos css)
+       - Tienen la especificidad CSS más alta, lo que hace que sea muy difícil sobrescribirlos con otras hojas de estilo en el futuro
+
+    b) ¿En qué casos podría ser útil?
+       - Para el diseño de correos electrónicos, ya que muchos clientes de correo (como Outlook o Gmail) eliminan las etiquetas <style> o bloquean los archivos CSS externos por seguridad
+       - Cuando se aplican estilos dinámicamente mediante JavaScript (por ejemplo, animar el movimiento de un elemento píxel a píxel o calcular una altura en tiempo real)
+       - Para hacer pruebas rápidas (debugging) en el navegador antes de pasar el código final al archivo CSS
+    -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Básica con 3 métodos de CSS</title>
+
+    <!-- MÉTODO 1: CSS EXTERNO -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- MÉTODO 2: CSS INTERNO -->
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+        
+        .texto-secundario {
+            color: #666666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <!-- El estilo de este título viene del archivo externo (estilos.css) -->
+        <h1>Hola, soy una web básica</h1>
+        
+        <!-- El estilo de este párrafo viene del CSS interno (<style>) -->
+        <p class="texto-secundario">
+            Este párrafo está siendo estilizado por el CSS interno que se encuentra en la cabecera (head) de este documento HTML.
+        </p>
+
+        <!-- MÉTODO 3: CSS EN LÍNEA (INLINE) -->
+        <p style="color: white; background-color: #ff5733; padding: 15px; border-radius: 5px; font-weight: bold;">
+            Este párrafo usa CSS en línea. Sus estilos están escritos directamente dentro de su propia etiqueta HTML.
+        </p>
+    </div>
+
+</body>
+</html>

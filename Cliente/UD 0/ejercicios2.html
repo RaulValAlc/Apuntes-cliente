@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejercicios 2</title>
+</head>
+
+<body>
+  <h1>Resultado:</h1>
+  <form action="" method="get">
+    <input type="button" value=" 7 " />
+    <input type="button" value=" 8 " />
+    <input type="button" value=" 9 " />
+    <input type="button" value=" / " /><br /><br />
+
+    <input type="button" value=" 4 " />
+    <input type="button" value=" 5 " />
+    <input type="button" value=" 6 " />
+    <input type="button" value=" * " /><br /><br />
+
+    <input type="button" value=" 1 " />
+    <input type="button" value=" 2 " />
+    <input type="button" value=" 3 " />
+    <input type="button" value=" + " /><br /><br />
+
+    <input type="button" value=" 0 " />
+    <input type="button" value="  =  " />
+    <input type="button" value=" - " />
+  </form>
+  <h2>Ejercicio 2</h2>
+  <form action="" method="post" enctype="multipart/form-data">
+    <label>Ingrese su nombre</label>
+    <input type="text" name="nombre" size="30" /><br />
+    <label>Seleccione la foto:</label>
+    <input type="file" name="archivo" size="30" /><br />
+    <br /><input type="submit" value="Enviar" />
+  </form>
+  <h3>Ejercicio 3</h3>
+  <form action="" method="get">
+    <!-- Primer recuadro-->
+    <fieldset>
+      <legend>Datos personales</legend>
+      <label>Apellido y nombre:</label>
+      <input type="text" name="nombre" /><br /><br />
+      <label>Documento de identidad:</label>
+      <input type="text" name="dni" /><br /><br />
+      <label>Fecha de nacimiento:</label>
+      <input type="date" name="fecha_nac" /><br /><br />
+      <label>Dirección:</label>
+      <input type="text" name="direccion_personal" /><br /><br />
+    </fieldset>
+    <br />
+    <!-- Segundo recuadro-->
+    <fieldset>
+      <legend>Datos Laborales</legend>
+      <label>Nombre de la empresa:</label>
+      <input type="text" name="empresa" /><br /><br />
+      <label>Actividad:</label>
+      <input type="text" name="actividad" /><br /><br />
+      <label>Dirección:</label>
+      <input type="text" name="direccion_laboral" /><br /><br />
+    </fieldset>
+    <br />
+    <input type="submit" value="Enviar" />
+  </form>
+  <h4>Ejercicio 4</h4>
+  <form action="" method="get">
+    <label>Apellido y nombre</label>
+    <input type="text" name="apellido_nombre" size="30" /><br />
+    <label>Es mayor de edad?</label><br />
+    <label><input type="radio" name="mayor_edad" value="Si" checked />Si</label><br />
+    <label><input type="radio" name="mayor_edad" value="No" />No</label><br />
+    <label>Telefono:</label>
+    <input type="text" name="telefono" size="30" value="453-" /><br />
+    <textarea name="comentarios" rows="7" cols="50">Ingrese aquí sus comentarios</textarea><br />
+    <input type="submit" value="Enviar" />
+  </form>
+  <p>Ejercicio 5</p>
+  <form action="" method="get">
+    <input type="text" name="celda1" tabindex="1" size="10" />
+    <input type="text" name="celda4" tabindex="4" size="10" />
+    <input type="text" name="celda7" tabindex="7" size="10" /><br /><br />
+
+    <input type="text" name="celda2" tabindex="2" size="10" />
+    <input type="text" name="celda5" tabindex="5" size="10" />
+    <input type="text" name="celda8" tabindex="8" size="10" /><br /><br />
+
+    <input type="text" name="celda3" tabindex="3" size="10" />
+    <input type="text" name="celda6" tabindex="6" size="10" />
+    <input type="text" name="celda9" tabindex="9" size="10" /><br /><br />
+
+    <input type="submit" value="Enviar" />
+  </form>
+  <p>Ejercicio 6</p>
+  <form action="" method="get">
+    <input type="radio" name="Edad" value="Niños" disabled />Niños</label><br />
+    <label><input type="radio" name="Edad" value="Adolescentes" />Adolescentes</label><br />
+    <label><input type="radio" name="Edad" value="Mayores" />Mayores</label><br />
+    <input type="submit" value="Enviar" />
+  </form>
+  <p>Ejercicio 7</p>
+  <form action="" method="get">
+    <label>Nombre usuario:</label>
+    <input type="text" name="user_name" size="30" maxlength="20" /><br />
+    <label>Clave</label>
+    <input type="text" name="clave" size="30" maxlength="12" /><br />
+    <input type="submit" value="Enviar" />
+  </form>
+  <p>Ejercicio 8</p>
+  <form action="" method="get">
+    <label>Nombre empresa:</label>
+    <input type="text" name="nombre_empresa" size="30" value="Nike" readonly /><br />
+    <label>Contrato:</label><br />
+    <textarea name="contrato" rows="5" cols="30" readonly>Contrato...</textarea><br />
+    <input type="submit" value="Enviar" />
+  </form>
+  <p>Ejercicio 9</p>
+  <form action="mailto:correo@ejemplo.com" method="post" enctype="text/plain"></form>
+  <p><b>Reclamos</b></p>
+  <label>Ingrese su nombre:</label>
+  <input type="text" name="nombre" size="30" /><br />
+  <label>Ingrese su direccion:</label>
+  <input type="text" name="direccion" size="30" /><br />
+  <label>Informe del problema:</label><br />
+  <textarea name="problema" rows="5" cols="30"></textarea><br />
+  <input type="submit" value="Enviar" />
+  </form>
+  <p>Ejercicio 10</p>
+  <form action="" method="post" enctype="text/plain">
+    <fieldset>
+      <legend>Formulario de comentarios</legend>
+      <label for="nombre">Ingrese su nombre:</label>
+      <input type="text" id="nombre" name="nombre" size="30" /><br />
+      <label for="mail">Ingrese su mail:</label>
+      <input type="text" id="mail" name="mail" size="30" /><br />
+      <label for="comentarios">Comentarios</label><br />
+      <textarea name="comentarios" id="comentarios" rows="5" cols="30"></textarea><br />
+      <input type="submit" value="Enviar" />
+    </fieldset>
+  </form>
+</body>
+
+</html>
