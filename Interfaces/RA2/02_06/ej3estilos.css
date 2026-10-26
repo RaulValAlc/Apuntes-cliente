@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.cabecera {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.menu a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+.pie-pagina {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.seccion-fluida {
+    width: 90%; 
+    max-width: 1200px; /* Límite máximo para que no se vea gigante en monitores */
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.seccion-fluida img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.texto-fluido h2 {
+    font-size: 2rem; 
+    margin-top: 1em;
+}
+
+.seccion-adaptativa {
+    background-color: #ddd;
+    padding: 2rem 5%;
+}
+.contenedor-productos {
+    display: flex;
+    flex-direction: column; /* Diseño móvil (375px): Los productos se apilan en 1 columna vertical */
+    gap: 1.5rem; /* Espacio entre los productos */
+}
+.producto {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* Adaptación para Tablet (768px o superior) */
+@media (min-width: 768px) {
+    /*A partir de 768px, hay espacio de sobra. Cambiamos el 
+    'flex-direction' a 'row' (fila). Ahora los productos se colocan en 3 columnas*/
+    .contenedor-productos {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    .producto {
+        width: 30%; /* Cada producto ocupa el 30% del ancho para caber los 3 */
+    }
+    
+    /* Adaptamos el menú para que se vea en una sola línea en tablets */
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+    }
+}
+
+/* Adaptación para Ordenador Sobremesa (1440px o superior) */
+@media (min-width: 1440px) {
+    /* Centramos las secciones y limitamos su ancho máximo a 1200px para mantener la legibilidad */
+    .seccion-adaptativa, .contacto {
+        max-width: 1200px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+    .producto {
+        padding: 2.5rem; 
+        font-size: 1.2rem; 
+    }
+}

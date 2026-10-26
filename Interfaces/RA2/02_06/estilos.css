@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'TipografiaEj1';
+    src: url(Fuente.otf);
+}
+
+.caja-responsive{
+    font-size: 10px;
+    width:100%;
+    background-color: blue;
+}
+
+h1{
+    font-family: 'TipografiaEj1';
+}
+
+h2{
+    animation: cambio-color 8s ease-out infinite;
+}
+
+@media (min-width: 720px){
+    .caja-responsive{
+        font-size: 20px;
+        width:50%;
+        background-color: red;
+    }
+}
+
+@keyframes cambio-color{
+    0%{
+        color:white;
+        background-color: black;
+    }
+    50%{
+        color:grey;
+        background-color: gainsboro;
+    }
+    100%{
+        color:black;
+        background-color: white;
+    }
+}
