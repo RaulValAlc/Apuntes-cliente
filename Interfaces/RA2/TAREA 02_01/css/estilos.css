@@ -1,0 +1,133 @@
+:root {
+    --color-principal: #925209;
+    --color-secundario: #05893a;
+    --color-fondo: #f9f9f6;
+    --color-blanco: #fff;
+
+    --fuente-principal: 'Georgia', system-ui;
+
+    --tamano-texto: 1rem;
+    --espaciado-base: 1rem;
+    --radio-elementos: 8px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    font-size: var(--tamano-texto);
+    color: #333;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--espaciado-base);
+}
+
+nav {
+    background-color: var(--color-principal);
+    text-align: right;
+    padding: var(--espaciado-base);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-blanco);
+    margin-left: var(--espaciado-base);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-fondo);
+}
+
+#encabezado {
+    text-align: center;
+    margin-bottom: var(--espaciado-base);
+}
+
+h1,
+h2 {
+    color: var(--color-principal);
+    margin-bottom: var(--espaciado-base);
+}
+
+p {
+    margin-bottom: var(--espaciado-base);
+}
+
+.destacado {
+    margin: var(--espaciado-base) 0;
+    background-color: #eaf4ed;
+    color: var(--color-secundario);
+    border-left: 5px solid var(--color-secundario);
+    border-radius: 0 var(--radio-elementos) var(--radio-elementos) 0;
+    font-weight: bold;
+    padding: var(--espaciado-base);
+}
+
+.grid-productos {
+    display: flex;
+    gap: var(--espaciado-base);
+    margin: var(--espaciado-base) 0;
+}
+
+.tarjeta-producto {
+    flex: 1;
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-elementos);
+    padding: var(--espaciado-base);
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radio-elementos);
+    margin-bottom: var(--espaciado-base);
+}
+
+.btnprincipal,
+.btnsecundario {
+    padding: 0.6rem 1.2rem;
+    font-size: var(--tamano-texto);
+    font-weight: bold;
+    border-radius: var(--radio-elementos);
+}
+
+.btnprincipal {
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+    border: none;
+}
+
+.btnprincipal:hover {
+    background-color: var(--color-secundario);
+}
+
+.btnsecundario {
+    color: var(--color-secundario);
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-secundario);
+}
+
+.btnsecundario:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: var(--espaciado-base);
+    text-align: center;
+}
