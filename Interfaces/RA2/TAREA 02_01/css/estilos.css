@@ -1,0 +1,118 @@
+
+:root {
+
+  --color-primario: #D97D54; 
+  --color-secundario: #4A7C59; 
+  --color-oscuro: #2C3E2D; 
+  --color-claro: #F9F6F0; 
+  --color-blanco: #FFFFFF;
+  
+  --fuente-principal: 'Segoe UI', system-ui, sans-serif;
+  
+  --espaciado-sm: 0.5rem;
+  --espaciado-md: 1rem;
+  --espaciado-lg: 2rem;
+  --radio-borde: 8px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-claro);
+  color: var(--color-oscuro);
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: var(--color-oscuro);
+  color: var(--color-blanco);
+  padding: var(--espaciado-md) var(--espaciado-lg);
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-bottom: var(--espaciado-md);
+  color: var(--color-secundario);
+}
+
+header h1 {
+  color: var(--color-blanco);
+}
+
+p {
+  margin-bottom: var(--espaciado-md);
+}
+
+a {
+  color: var(--color-primario);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--espaciado-sm) var(--espaciado-md);
+  border-radius: var(--radio-borde);
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.btn-principal {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+.btn-principal:hover {
+  background-color: transparent;
+  border-color: var(--color-primario);
+  color: var(--color-primario);
+}
+
+.btn-secundario {
+  background-color: transparent;
+  border-color: var(--color-secundario);
+  color: var(--color-secundario);
+}
+
+.btn-secundario:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+.tarjeta-producto {
+  background-color: var(--color-blanco);
+  border: 1px solid #ddd;
+  border-radius: var(--radio-borde);
+  padding: var(--espaciado-md);
+  margin-bottom: var(--espaciado-md);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.tarjeta-producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radio-borde);
+  margin-bottom: var(--espaciado-sm);
+}
+
+.destacado {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: var(--espaciado-md);
+  border-radius: var(--radio-borde);
+  border-left: 5px solid var(--color-primario);
+  font-weight: bold;
+}
